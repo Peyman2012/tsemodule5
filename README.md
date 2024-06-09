@@ -18,9 +18,7 @@
 
 This file allows your library to export the StockManager and IndexManager modules.
 
-
   from .stock_manager import StockManager
-  
   from .index_manager import IndexManager
 
 tsemodel7/__init__.py:
