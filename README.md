@@ -1,7 +1,4 @@
-### tsemodule7
-#### code by t.me/python4finance
-#### Please visit [python4finance.ir](http://www.python4finance.ir/) 
-#### you can contact me via @sadiqkarimi in Telegram application
+
 ### Project folder structure
 
     tsemodel7/
@@ -14,12 +11,29 @@
     ├── setup.py
     └── README.md
 
-### 1. __init__.py file:
+# tsemodel7
 
-This file allows your library to export the StockManager and IndexManager modules.
+A library for managing stock and index data from TSETMC.
 
-   from .stock_manager import StockManager
-   from .index_manager import IndexManager
+## Installation
 
-### tsemodel7/__init__.py:
+You can install the library using pip:
+
+```bash
+
+    pip install tsemodel7
+
+    from tsemodel7 import StockManager, IndexManager
+
+    stock_manager = StockManager()
+    index_manager = IndexManager()
+
+    # Example calls
+    print(stock_manager.stocklist())
+    print(stock_manager.stockdetail("آبادا", type="full"))
+    print(stock_manager.stock("آپ", value=10))
+    print(index_manager.index(value=10))
+
+
+
 
